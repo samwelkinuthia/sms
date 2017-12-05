@@ -15,6 +15,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'twilio-ruby', '~> 5.5.1'
 gem 'dotenv-rails'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
 
 
 group :development, :test do
