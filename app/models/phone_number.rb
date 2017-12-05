@@ -5,7 +5,7 @@ class PhoneNumber < ApplicationRecord
   end
 
   def twilio_client
-    Twilio::Rest::Client.new(ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN'])
+    Twilio::REST::Client.new(ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN'])
   end
 
   def send_pin
