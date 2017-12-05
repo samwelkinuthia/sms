@@ -3,4 +3,8 @@ class PhoneNumber < ApplicationRecord
     self.pin = rand(0000..9999).to_s.rjust(4,"0")
     save
   end
+
+  def twilio_client
+    Twilio::Rest::Client.new(ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN'])
+  end
 end
